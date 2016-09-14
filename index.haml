@@ -1,0 +1,528 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title
+    / Bootstrap Core CSS
+    %link{:href => "vendor/bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}/
+    / Custom Fonts
+    %link{:href => "vendor/font-awesome/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+    / Theme CSS
+    %link{:href => "css/agency.css", :rel => "stylesheet"}/
+    /[if lt IE 9]
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body#page-top.index
+    / Navigation
+    %nav#mainNav.navbar.navbar-default
+      .container
+        .navbar-header.page-scroll
+          %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %i.fa.fa-bars
+          %a.navbar-brand.page-scroll{:href => "#page-top"}
+            %img.logo{:src => "images/logo_2-min.png"}/
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li.hidden
+              %a{:href => "#page-top"}
+            %li
+              %a.page-scroll{:href => "#block_2"} Для кого
+            %li
+              %a.page-scroll{:href => "#block_4"} Как это работает
+            %li
+              %a.page-scroll{:href => "#block_5"} Сколько стоит
+            %li.nav-lang
+              %a{:href => "#"}
+                %img.ico{:src => "images/flag_RUS-min.png"}/
+                Русский
+            %li
+              %a.page-scroll{:href => "#block_6"} Для переводчиков
+    / Header
+    %header
+      .container
+        .row{:style => "position: relative"}
+          .col-xs-12.col-sm-12.col-md-8
+            .intro-text
+              .intro-lead-in
+                Настоящий переводчик
+                = succeed "\u{432}" do
+                  %br/
+              .intro-heading
+                Закажите услугу устного перевода и Абракадабра соединит Вас и нужного переводчика в течении 1 минуты.
+                Без предварительного заказа. Без предоплаты.
+              %a.page-scroll.btn{:href => "#services"}
+                %img{:src => "images/appstore_button-min.png", :style => "width: 70%"}/
+          %img#iphone.img-responsive.hidden-xs.hidden-sm{:src => "images/iPhone%206S%20Silver-min.png"}/
+    / Section block 2
+    %section#block_2
+      .container
+        .row
+          .col-xs-12.col-sm-12.col-md-4
+            %img.img-responsive{:src => "images/block_2_image-min.png"}/
+          .col-xs-12.col-sm-12.col-md-7.col-md-offset-1
+            .title.white.title-2 Когда вы в другой стране
+            %p.white
+              В отпуске или в деловой поездке по другой стране иногда возникают ситуации, когда надо
+              объясняться на незнакомом языке. В аптеке или в магазине, в гостинице или с таксистом, при
+              аренде автомобиля или беседе с врачом. Примите на свой телефон звонок нужного переводчика и
+              говорите поочередно, передавая смартфон другу другу, или просто включите громкую связь.
+    / Section block 3
+    %section#block_3
+      .container
+        .row
+          .col-xs-12.col-sm-12.col-md-7
+            .title.blue
+              Когда надо позвонить
+              %br>/
+              в другую страну
+            %p.blue
+              Провести деловые переговоры с фабрикой в Китае или уточнить наличие нужного товара в парижском
+              магазине. Теперь это просто. Абракадабра может соединить Вас, переводчика и до 3-х
+              дополнительных абонентов из любых стран. Просто внесите нужные телефоные номера или выберите их
+              из записной книжки. Абракадабра сначала соединит Вас и переводчика для того, чтобы Вы уточнили
+              детали предстоящего разговора и после этого организует коференц-связь - перезвонит по остальным
+              номерам и соединит вас всех вместпе.
+          .col-xs-12.col-sm-12.col-md-4.col-md-offset-1.text-right
+            %img.img-responsive{:src => "images/block_3_image-min.png"}/
+    / Section block 4
+    %section#block_4
+      .container
+        .row
+          .col-xs-12.col-sm-12.col-md-4
+            %img.img-responsive{:src => "images/block_4_image-min.png"}/
+          .col-xs-12.col-sm-12.col-md-7.col-md-offset-1
+            .title.white.title-4 Как это работает
+            %p.white
+              Вы выбираете язык, специализацию переводчика и участников предстоящего разговора, а Абракадабра
+              дозванивается до всех и организует конференц-связь - соединяет в разговоре Вас и переводчика, а
+              если Вам нужно, то и других абонентов. Аброкадабра может связаться с Вами как по Voip-связи, так
+              и перезвонить по указанному Вами обычному телефонному номеру.
+    / Section block 5
+    %section#block_5
+      .container
+        .row
+          .col-xs-12.col-sm-12.col-md-7
+            .title.blue.title-5 Доступ в интернет не обязателен
+            %p.blue
+              Если доступ в интернет слишком дорогой или вообще отсутствует, то Абракадабра перезвонит Вам все
+              равно. Для заказа достаточно иметь смартфон с функцией отправки смс.
+          .col-xs-12.col-sm-12.col-md-4.col-md-offset-1
+            %img.img-responsive{:src => "images/block_5_image-min.png"}/
+    / Section block 6
+    %section#block_6
+      .container
+        .intro-text
+          .title.white Лучшие переводчики
+          %p.white
+            Сотни переводчиков со всего мира работают для вас.
+            %br/
+            Выбирайте специализацию переводчика от медицины
+            %br/
+            до бизнеса. Делайте повторные заказы у понравившихся
+            %br/
+            переводчиков. Оценивайте переводчика после каждого заказа.
+            %br/
+            Только лучшие переводчики остаются в Абракадабре.
+          %br/
+          %br/
+          %br/
+          %a.page-scroll.btn.btn-xl{"data-target" => "#register", "data-toggle" => "modal", :href => "#services"} СТАНЬ ПЕРЕВОДЧИКОМ
+    / Section block 7
+    %section#block_7
+      .container
+        .row
+          .col-xs-12.text-center
+            .title.blue2.text-uppercase
+              от
+              %span.green $0,5
+              за минуту
+            %p.blue
+              Поминутная тарификация. Оплата кредитной картой только
+              %br/
+              после получения услуги перевода. Персональный переводчик
+              %br/
+              на 3 минуты? Теперь это стало возможно.
+            %img.img-responsive{:src => "images/block_7_image-min.png"}/
+    %footer
+      .container
+        .row
+          .col-md-3
+            %a{:href => "#"}
+              %img.img-responsive{:src => "images/appstore_button_2-min.png"}/
+          .col-md-6.text-left
+            %a.footer-link.page-scroll{:href => "#block_4"} Как это работает
+            %a.footer-link.page-scroll{:href => "#block_5"} Сколько стоит
+            %a.footer-link.page-scroll{:href => "#block_6"} Переводчики
+            %a.footer-link.page-scroll{:href => "#"} Договор об использовании сервиса
+            %a.footer-link.page-scroll{:href => "#"} Поддержка
+          .col-md-2
+            %img.social{:src => "images/social_1-min.png"}/
+            %img.social{:src => "images/social_2-min.png"}/
+            %img.social{:src => "images/social_3-min.png"}/
+    / Register Modal 1
+    #register.register-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .close-modal{"data-dismiss" => "modal"}
+            .lr
+              .rl
+          .row
+            .col-lg-10.col-lg-offset-1
+              %form{:action => "/en/candidates", :method => "POST"}
+                %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                .modal-body
+                  / Project Details Go Here
+                  .title.blue.text-center Регистрация
+                  .row
+                    .col-sm-12.col-md-6
+                      .form-group.label-static.is-empty
+                        %label.control-label{:for => "i1"}
+                          Имя
+                          %span.disabled (Латиница)
+                        %input#i1.form-control{:name => "first_name", :placeholder => "", :type => "text"}/
+                    .col-sm-12.col-md-6
+                      .form-group.label-static.is-empty
+                        %label.control-label{:for => "i2"}
+                          Фамилия
+                          %span.disabled (Латиница)
+                        %input#i2.form-control{:name => "last_name", :placeholder => "", :type => "text"}/
+                  .row
+                    .col-sm-12
+                      .form-group.label-static.is-empty
+                        %label.control-label{:for => "i3"} Электронная почта
+                        %input#i3.form-control{:name => "email", :placeholder => "", :type => "email"}/
+                  .row
+                    .col-sm-12
+                      .form-group.label-static.is-empty
+                        %label.control-label{:for => "i4"} Телефон
+                        %input#i4.form-control{:name => "phone", :placeholder => "", :type => "email"}/
+                  .row
+                    .col-sm-12
+                      .form-group.label-static.is-empty
+                        %label.control-label{:for => "i5"} Страна
+                        %select#i5.form-control{:name => "country"}
+                          %option{:disabled => "disabled", :selected => "selected"} Выберите страну
+                          %option{:value => "AF"} Afghanistan
+                          %option{:value => "AX"} Åland Islands
+                          %option{:value => "AL"} Albania
+                          %option{:value => "DZ"} Algeria
+                          %option{:value => "AS"} American Samoa
+                          %option{:value => "AD"} Andorra
+                          %option{:value => "AO"} Angola
+                          %option{:value => "AI"} Anguilla
+                          %option{:value => "AQ"} Antarctica
+                          %option{:value => "AG"} Antigua and Barbuda
+                          %option{:value => "AR"} Argentina
+                          %option{:value => "AM"} Armenia
+                          %option{:value => "AW"} Aruba
+                          %option{:value => "AU"} Australia
+                          %option{:value => "AT"} Austria
+                          %option{:value => "AZ"} Azerbaijan
+                          %option{:value => "BS"} Bahamas
+                          %option{:value => "BH"} Bahrain
+                          %option{:value => "BD"} Bangladesh
+                          %option{:value => "BB"} Barbados
+                          %option{:value => "BY"} Belarus
+                          %option{:value => "BE"} Belgium
+                          %option{:value => "BZ"} Belize
+                          %option{:value => "BJ"} Benin
+                          %option{:value => "BM"} Bermuda
+                          %option{:value => "BT"} Bhutan
+                          %option{:value => "BO"} Bolivia, Plurinational State of
+                          %option{:value => "BQ"} Bonaire, Sint Eustatius and Saba
+                          %option{:value => "BA"} Bosnia and Herzegovina
+                          %option{:value => "BW"} Botswana
+                          %option{:value => "BV"} Bouvet Island
+                          %option{:value => "BR"} Brazil
+                          %option{:value => "IO"} British Indian Ocean Territory
+                          %option{:value => "BN"} Brunei Darussalam
+                          %option{:value => "BG"} Bulgaria
+                          %option{:value => "BF"} Burkina Faso
+                          %option{:value => "BI"} Burundi
+                          %option{:value => "KH"} Cambodia
+                          %option{:value => "CM"} Cameroon
+                          %option{:value => "CA"} Canada
+                          %option{:value => "CV"} Cape Verde
+                          %option{:value => "KY"} Cayman Islands
+                          %option{:value => "CF"} Central African Republic
+                          %option{:value => "TD"} Chad
+                          %option{:value => "CL"} Chile
+                          %option{:value => "CN"} China
+                          %option{:value => "CX"} Christmas Island
+                          %option{:value => "CC"} Cocos (Keeling) Islands
+                          %option{:value => "CO"} Colombia
+                          %option{:value => "KM"} Comoros
+                          %option{:value => "CG"} Congo
+                          %option{:value => "CD"} Congo, The Democratic Republic of the
+                          %option{:value => "CK"} Cook Islands
+                          %option{:value => "CR"} Costa Rica
+                          %option{:value => "CI"} Côte d'Ivoire
+                          %option{:value => "HR"} Croatia
+                          %option{:value => "CU"} Cuba
+                          %option{:value => "CW"} Curaçao
+                          %option{:value => "CY"} Cyprus
+                          %option{:value => "CZ"} Czech Republic
+                          %option{:value => "DK"} Denmark
+                          %option{:value => "DJ"} Djibouti
+                          %option{:value => "DM"} Dominica
+                          %option{:value => "DO"} Dominican Republic
+                          %option{:value => "EC"} Ecuador
+                          %option{:value => "EG"} Egypt
+                          %option{:value => "SV"} El Salvador
+                          %option{:value => "GQ"} Equatorial Guinea
+                          %option{:value => "ER"} Eritrea
+                          %option{:value => "EE"} Estonia
+                          %option{:value => "ET"} Ethiopia
+                          %option{:value => "FK"} Falkland Islands (Malvinas)
+                          %option{:value => "FO"} Faroe Islands
+                          %option{:value => "FJ"} Fiji
+                          %option{:value => "FI"} Finland
+                          %option{:value => "FR"} France
+                          %option{:value => "GF"} French Guiana
+                          %option{:value => "PF"} French Polynesia
+                          %option{:value => "TF"} French Southern Territories
+                          %option{:value => "GA"} Gabon
+                          %option{:value => "GM"} Gambia
+                          %option{:value => "GE"} Georgia
+                          %option{:value => "DE"} Germany
+                          %option{:value => "GH"} Ghana
+                          %option{:value => "GI"} Gibraltar
+                          %option{:value => "GR"} Greece
+                          %option{:value => "GL"} Greenland
+                          %option{:value => "GD"} Grenada
+                          %option{:value => "GP"} Guadeloupe
+                          %option{:value => "GU"} Guam
+                          %option{:value => "GT"} Guatemala
+                          %option{:value => "GG"} Guernsey
+                          %option{:value => "GN"} Guinea
+                          %option{:value => "GW"} Guinea-Bissau
+                          %option{:value => "GY"} Guyana
+                          %option{:value => "HT"} Haiti
+                          %option{:value => "HM"} Heard Island and McDonald Islands
+                          %option{:value => "VA"} Holy See (Vatican City State)
+                          %option{:value => "HN"} Honduras
+                          %option{:value => "HK"} Hong Kong
+                          %option{:value => "HU"} Hungary
+                          %option{:value => "IS"} Iceland
+                          %option{:value => "IN"} India
+                          %option{:value => "ID"} Indonesia
+                          %option{:value => "IR"} Iran, Islamic Republic of
+                          %option{:value => "IQ"} Iraq
+                          %option{:value => "IE"} Ireland
+                          %option{:value => "IM"} Isle of Man
+                          %option{:value => "IL"} Israel
+                          %option{:value => "IT"} Italy
+                          %option{:value => "JM"} Jamaica
+                          %option{:value => "JP"} Japan
+                          %option{:value => "JE"} Jersey
+                          %option{:value => "JO"} Jordan
+                          %option{:value => "KZ"} Kazakhstan
+                          %option{:value => "KE"} Kenya
+                          %option{:value => "KI"} Kiribati
+                          %option{:value => "KP"} Korea, Democratic People's Republic of
+                          %option{:value => "KR"} Korea, Republic of
+                          %option{:value => "KW"} Kuwait
+                          %option{:value => "KG"} Kyrgyzstan
+                          %option{:value => "LA"} Lao People's Democratic Republic
+                          %option{:value => "LV"} Latvia
+                          %option{:value => "LB"} Lebanon
+                          %option{:value => "LS"} Lesotho
+                          %option{:value => "LR"} Liberia
+                          %option{:value => "LY"} Libya
+                          %option{:value => "LI"} Liechtenstein
+                          %option{:value => "LT"} Lithuania
+                          %option{:value => "LU"} Luxembourg
+                          %option{:value => "MO"} Macao
+                          %option{:value => "MK"} Macedonia, Republic of
+                          %option{:value => "MG"} Madagascar
+                          %option{:value => "MW"} Malawi
+                          %option{:value => "MY"} Malaysia
+                          %option{:value => "MV"} Maldives
+                          %option{:value => "ML"} Mali
+                          %option{:value => "MT"} Malta
+                          %option{:value => "MH"} Marshall Islands
+                          %option{:value => "MQ"} Martinique
+                          %option{:value => "MR"} Mauritania
+                          %option{:value => "MU"} Mauritius
+                          %option{:value => "YT"} Mayotte
+                          %option{:value => "MX"} Mexico
+                          %option{:value => "FM"} Micronesia, Federated States of
+                          %option{:value => "MD"} Moldova, Republic of
+                          %option{:value => "MC"} Monaco
+                          %option{:value => "MN"} Mongolia
+                          %option{:value => "ME"} Montenegro
+                          %option{:value => "MS"} Montserrat
+                          %option{:value => "MA"} Morocco
+                          %option{:value => "MZ"} Mozambique
+                          %option{:value => "MM"} Myanmar
+                          %option{:value => "NA"} Namibia
+                          %option{:value => "NR"} Nauru
+                          %option{:value => "NP"} Nepal
+                          %option{:value => "AN"} Netherlands Antilles
+                          %option{:value => "NL"} Netherlands
+                          %option{:value => "NC"} New Caledonia
+                          %option{:value => "NZ"} New Zealand
+                          %option{:value => "NI"} Nicaragua
+                          %option{:value => "NE"} Niger
+                          %option{:value => "NG"} Nigeria
+                          %option{:value => "NU"} Niue
+                          %option{:value => "NF"} Norfolk Island
+                          %option{:value => "MP"} Northern Mariana Islands
+                          %option{:value => "NO"} Norway
+                          %option{:value => "OM"} Oman
+                          %option{:value => "PK"} Pakistan
+                          %option{:value => "PW"} Palau
+                          %option{:value => "PS"} Palestine, State of
+                          %option{:value => "PA"} Panama
+                          %option{:value => "PG"} Papua New Guinea
+                          %option{:value => "PY"} Paraguay
+                          %option{:value => "PE"} Peru
+                          %option{:value => "PH"} Philippines
+                          %option{:value => "PN"} Pitcairn
+                          %option{:value => "PL"} Poland
+                          %option{:value => "PT"} Portugal
+                          %option{:value => "PR"} Puerto Rico
+                          %option{:value => "QA"} Qatar
+                          %option{:value => "RE"} Réunion
+                          %option{:value => "RO"} Romania
+                          %option{:value => "RU"} Russian Federation
+                          %option{:value => "RW"} Rwanda
+                          %option{:value => "BL"} Saint Barthélemy
+                          %option{:value => "SH"} Saint Helena, Ascension and Tristan da Cunha
+                          %option{:value => "KN"} Saint Kitts and Nevis
+                          %option{:value => "LC"} Saint Lucia
+                          %option{:value => "MF"} Saint Martin (French part)
+                          %option{:value => "PM"} Saint Pierre and Miquelon
+                          %option{:value => "VC"} Saint Vincent and the Grenadines
+                          %option{:value => "WS"} Samoa
+                          %option{:value => "SM"} San Marino
+                          %option{:value => "ST"} Sao Tome and Principe
+                          %option{:value => "SA"} Saudi Arabia
+                          %option{:value => "SN"} Senegal
+                          %option{:value => "RS"} Serbia
+                          %option{:value => "SC"} Seychelles
+                          %option{:value => "SL"} Sierra Leone
+                          %option{:value => "SG"} Singapore
+                          %option{:value => "SX"} Sint Maarten (Dutch part)
+                          %option{:value => "SK"} Slovakia
+                          %option{:value => "SI"} Slovenia
+                          %option{:value => "SB"} Solomon Islands
+                          %option{:value => "SO"} Somalia
+                          %option{:value => "ZA"} South Africa
+                          %option{:value => "GS"} South Georgia and the South Sandwich Islands
+                          %option{:value => "SS"} South Sudan
+                          %option{:value => "ES"} Spain
+                          %option{:value => "LK"} Sri Lanka
+                          %option{:value => "SD"} Sudan
+                          %option{:value => "SR"} Suriname
+                          %option{:value => "SJ"} Svalbard and Jan Mayen
+                          %option{:value => "SZ"} Swaziland
+                          %option{:value => "SE"} Sweden
+                          %option{:value => "CH"} Switzerland
+                          %option{:value => "SY"} Syrian Arab Republic
+                          %option{:value => "TW"} Taiwan
+                          %option{:value => "TJ"} Tajikistan
+                          %option{:value => "TZ"} Tanzania, United Republic of
+                          %option{:value => "TH"} Thailand
+                          %option{:value => "TL"} Timor-Leste
+                          %option{:value => "TG"} Togo
+                          %option{:value => "TK"} Tokelau
+                          %option{:value => "TO"} Tonga
+                          %option{:value => "TT"} Trinidad and Tobago
+                          %option{:value => "TN"} Tunisia
+                          %option{:value => "TR"} Turkey
+                          %option{:value => "TM"} Turkmenistan
+                          %option{:value => "TC"} Turks and Caicos Islands
+                          %option{:value => "TV"} Tuvalu
+                          %option{:value => "UG"} Uganda
+                          %option{:value => "UA"} Ukraine
+                          %option{:value => "AE"} United Arab Emirates
+                          %option{:value => "GB"} United Kingdom
+                          %option{:value => "UM"} United States Minor Outlying Islands
+                          %option{:value => "US"} United States
+                          %option{:value => "UY"} Uruguay
+                          %option{:value => "UZ"} Uzbekistan
+                          %option{:value => "VU"} Vanuatu
+                          %option{:value => "VE"} Venezuela, Bolivarian Republic of
+                          %option{:value => "VN"} Viet Nam
+                          %option{:value => "VG"} Virgin Islands, British
+                          %option{:value => "VI"} Virgin Islands, U.S.
+                          %option{:value => "WF"} Wallis and Futuna
+                          %option{:value => "EH"} Western Sahara
+                          %option{:value => "YE"} Yemen
+                          %option{:value => "ZM"} Zambia
+                          %option{:value => "ZW"} Zimbabwe
+                  .row
+                    .col-sm-12
+                      .form-group.label-static.is-empty
+                        %label.control-label{:for => "i6"} Город
+                        %input#i6.form-control{:name => "city", :placeholder => "", :type => "text"}/
+                  .row
+                    .col-sm-12
+                      .form-group.label-static.is-empty
+                        %label.control-label{:for => "i7"} Язык
+                        %select#i7.form-control{:name => "lang"}
+                          %option{:disabled => "disabled", :selected => "selected"} Выберите язык
+                          %option Русский
+                          %option Английский
+                  %br/
+                  .title.blue.text-center Навыки
+                  .lang-box
+                    %div
+                      .row
+                        .col-sm-12.col-md-6
+                          .form-group.label-static.is-empty
+                            %select.form-control{:name => "langfrom"}
+                              %option{:disabled => "disabled", :selected => "selected"} Выберите язык
+                              %option Русский
+                              %option Английский
+                        .col-sm-12.col-md-6
+                          .form-group.label-static.is-empty
+                            %select.form-control{:name => "langto"}
+                              %option{:disabled => "disabled", :selected => "selected"} Выберите язык
+                              %option Русский
+                              %option Английский
+                      .row
+                        .col-sm-12
+                          .form-group.label-static.is-empty
+                            %label.control-label Выберите специализацию
+                            %select.form-control{:name => "spec"}
+                              %option Общая лексика
+                  .row
+                    .col-sm-12.text-center
+                      %span#langadd.blue2.form-add Добавить языковую пару
+                  .row
+                    .col-sm-12.text-center
+                      %button.page-scroll.btn.btn-xl.btn-xl-b{:type => "submit"} ОТПРАВИТЬ ЗАЯВКУ
+    .lang-box-hidden
+      .lang-box-item
+        .row
+          .col-sm-12.col-md-6
+            .form-group.label-static.is-empty
+              %select.form-control{:name => "langfrom"}
+                %option{:disabled => "disabled", :selected => "selected"} Выберите язык
+                %option Русский
+                %option Английский
+          .col-sm-12.col-md-6
+            .form-group.label-static.is-empty
+              %select.form-control{:name => "langto"}
+                %option{:disabled => "disabled", :selected => "selected"} Выберите язык
+                %option Русский
+                %option Английский
+        .row
+          .col-sm-12
+            .form-group.label-static.is-empty
+              %label.control-label Выберите специализацию
+              %select.form-control{:name => "spec"}
+                %option Общая лексика
+    / jQuery
+    %script{:src => "vendor/jquery/jquery.min.js"}
+    %script{:src => "js/agency.js"}
+    / Bootstrap Core JavaScript
+    %script{:src => "vendor/bootstrap/js/bootstrap.min.js"}
+    / Plugin JavaScript
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"}

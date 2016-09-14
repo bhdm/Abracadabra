@@ -21,8 +21,10 @@
   font-style: normal;
 }
 
-* {
+body{
   overflow-x: hidden;
+}
+* {
   font-family: "PTSans-Regular", Helvetica, Arial, sans-serif;
 }
 
@@ -132,7 +134,7 @@ fieldset[disabled] .btn-primary.active {
   font-weight: normal;
   border-radius: 100px;
   font-size: 18px;
-  padding: 20px 40px;
+  padding: 20px 60px;
 
 }
 .btn-xl:hover,
@@ -141,8 +143,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #2b78b5;
+  border-color: #2b78b5;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -813,7 +815,7 @@ body {
 }
 @media (min-width: 768px) {
   #block_6 .intro-text {
-    padding-top: 300px;
+    padding-top: 100px;
     padding-bottom: 200px;
   }
   #block_6 .intro-text .intro-lead-in {
@@ -942,13 +944,26 @@ p{
   background: #FFF;
   border-radius: 0;
   outline: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 0 8px rgba(255,255,255,1) !important;;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 0 8px rgba(255,255,255,1) !important;
 }
 .form-control:active, .form-control:focus, .form-control:hover. .form-control:visited{
   outline: none;
+   border-color: #FFF;
+  outline: 0;
+   -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 0 8px rgba(255,255,255,1) !important;;
+   box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 0 8px rgba(255,255,255,1) !important;
+}
+.form-control:focus{
+  border-color: #FFF;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 0 8px rgba(255,255,255,1) !important;;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,1),0 0 8px rgba(255,255,255,1) !important;
+  border-bottom: 1px solid #cad1da;
 }
 @media (min-width: 768px){
   .modal-dialog {
-    width: 800px;
+    width: 600px;
     margin: 30px auto;
   }
 }
@@ -960,4 +975,29 @@ p{
 }
 .title-5{
   margin-top: 65px;
+}
+.form-control::-moz-placeholder {
+  color: #BBB;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #BBB;
+}
+.form-control::-webkit-input-placeholder {
+  color: #BBB;
+}
+.modal-body{
+  padding: 50px 0;
+}
+.form-add{
+  font-size: 20px;
+  margin: 40px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.lang-box-item{
+  margin-top: 20px;
+}
+.lang-box-hidden{
+  display: none;
 }

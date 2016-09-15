@@ -140,6 +140,39 @@
               от
               %span.green $0,5
               за минуту
+            #pricetable.row
+              .col-sm-8.col-sm-offset-2
+                %table.table.pricetable
+                  %tr
+                    %td
+                    %td.thlang Английский
+                    %td.thlang Французский
+                    %td.thlang Русский
+                    %td.thlang Испанский
+                  %tr
+                    %td.thlang Английский
+                    %td -
+                    %td $1
+                    %td $1
+                    %td $1
+                  %tr
+                    %td.thlang Французский
+                    %td $1
+                    %td -
+                    %td $2
+                    %td $1
+                  %tr
+                    %td.thlang Русский
+                    %td $1
+                    %td $2
+                    %td -
+                    %td $3
+                  %tr
+                    %td.thlang Испанский
+                    %td $1
+                    %td $1
+                    %td $1
+                    %td -
             %p.blue
               Поминутная тарификация. Оплата кредитной картой только
               %br/
@@ -167,11 +200,10 @@
     #register.register-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
       .modal-dialog
         .modal-content
-          .close-modal{"data-dismiss" => "modal"}
-            .lr
-              .rl
           .row
             .col-lg-10.col-lg-offset-1
+              .modal-header
+                %img.close{"aria-label" => "Close", "data-dismiss" => "modal", :src => "images/close.png"}/
               %form{:action => "/en/candidates", :method => "POST"}
                 %input{:name => "utf8", :type => "hidden", :value => "✓"}/
                 .modal-body
@@ -498,6 +530,32 @@
                   .row
                     .col-sm-12.text-center
                       %button.page-scroll.btn.btn-xl.btn-xl-b{:type => "submit"} ОТПРАВИТЬ ЗАЯВКУ
+    / Success Modal
+    #register2.register-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .row
+            .col-lg-10.col-lg-offset-1
+              .modal-header
+                %img.close{"aria-label" => "Close", "data-dismiss" => "modal", :src => "images/close.png"}/
+              .modal-body
+                / Project Details Go Here
+                .row
+                  .col-sm-12
+                    .title.blue2.text-center.big.text-uppercase Успех
+                    %p.blue
+                      Осталось совсем немного - перед тем как Вы сможете начать работать, нам необходимо
+                      проверить Ваши данные.
+                    %br/
+                    %p.blue
+                      Пока осуществляется проверка, Вы можете скачать приложение "Переводчик"
+                .row{:style => "margin-top: 50px"}
+                  .col-sm-12.text-center
+                    %a.page-scroll.btn{:href => "#"}
+                      %img{:src => "images/appstore_button-min.png", :style => "width: 70%"}/
+                .row{:style => "margin-top: 50px"}
+                  .col-sm-12.text-center
+                    %button.page-scroll.btn.btn-xl.btn-xl-b{"aria-label" => "Close", "data-dismiss" => "modal", :type => "submit"} ГОТОВО
     .lang-box-hidden
       .lang-box-item
         .row

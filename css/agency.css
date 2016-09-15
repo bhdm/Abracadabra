@@ -1015,3 +1015,18 @@ p{
   width: 32px;
   opacity: 1;
 }
+.pricetable{
+    margin-bottom: 50px;
+}
+.pricetable tr td{
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #c8d2db;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #0d3d51;
+}
+.thlang{
+    color: #678293 !important;
+}
